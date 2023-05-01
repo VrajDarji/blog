@@ -1,0 +1,8 @@
+<%-include ("partials/header.ejs")%>
+<h1>Home</h1>
+<p><%=sc%></p>
+<%for(let i=0;i<con.length;i++){%>
+    <h3><%=con[i].title%></h3>
+    <p><%=con[i].body.substring(0,100) + "..."%><a href="/posts/<%=con[i].title%>">Read More</a></p>
+<%}%>
+<%-include ("partials/footer.ejs")%>
