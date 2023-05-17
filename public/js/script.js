@@ -10,6 +10,7 @@ updateBody();
 function updateBody() {
   if (inputEl.checked) {
     bodyEl.style.background = "black";
+    // bodyE1.style.fontcolor="white";
   } else {
     bodyEl.style.background = "white";
   }
